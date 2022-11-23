@@ -139,7 +139,7 @@ test('returns the average of a the array', ()=> {
   });
 });
 
-describe('Unique Arrays - uniquifyArray #6', ()=> {
+describe.only('Unique Arrays - uniquifyArray #6', ()=> {
 test('Defines uniquifyArray', ()=> {
     expect(typeof uniquifyArray).toBe('function');
   });
