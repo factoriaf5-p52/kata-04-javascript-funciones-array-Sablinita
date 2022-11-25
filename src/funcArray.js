@@ -44,7 +44,6 @@ export function sumArray(array){
 }
 
 
-
 /*Calcula el promedio de un array 4*/
 
 export function averageNumbers(list) {
@@ -57,23 +56,29 @@ export function averageNumbers(list) {
 /*Calcula el promedio de un palabra 5*/
 
 export function averageWordLength(array) {
-    if(!array.length) return undefined
-      const newArray = array.map((element)=>{
-         return element.length
-        })
-       return sumArray(newArray)/newArray.length
-     }
+    const newArray = array.map((element)=>{        return element.length
+   })
+      return sumArray(newArray)/newArray.length
+ }
+    
 
+/*Elimina los duplicados y devuelve el resultado como un nuevo array 6*/
 
-/*Elimina los duplicados y devuelve el resultado como un nuevo array*/
+export function uniquifyArray
 
-export function uniquifyArray(words){
-    const deleteRep = (array) =>{
-        return [... new Set(array)];
-    }
-  return (deleteRep(words));
+/*Función doesWordExist*/
+
+export function doesWordExist(newArray){
+    let  newArray = "true" || "false";
+    for (let i=0; i < newArray.elements.length; i++) {
+        let element = newArray[i];
+        if(element = newArray[i])
+        return "true"
+    }  if (element != newArray[i])
+        return "false"
 }
-export function doesWordExist(){}
+
+
 export function howManyTimes(){}
 export function greatestProduct(){}
 
