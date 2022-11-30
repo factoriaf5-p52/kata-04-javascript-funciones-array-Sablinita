@@ -1,4 +1,4 @@
-/* Encuentra el máximo 1*/
+// Encuentra el máximo 1
 
 export function maxOfTwoNumbers(num1, num2){
     if (num1 > num2){
@@ -14,7 +14,7 @@ export function maxOfTwoNumbers(num1,num2){
 }*/
 
 
-/* Encuentra la más larga 2*/
+// Encuentra la más larga 2
 
 export function findLongestWord(words){
 
@@ -31,7 +31,7 @@ let longestWord = '';
 }
 
 
-/*Calcula la suma de un array 3*/
+//Calcula la suma de un array 3
 
 
 export function sumArray(array){
@@ -44,42 +44,57 @@ export function sumArray(array){
 }
 
 
-/*Calcula el promedio de un array 4*/
+//Calcula el promedio de un array 4
 
 export function averageNumbers(list) {
-    if(!list.length) return undefined
+    if(!list.length) {
+        return undefined
+    }
     // const additionList = sumArray(list)
     return sumArray(list)/list.length
- }
+}
 
   
-/*Calcula el promedio de un palabra 5*/
+//Calcula el promedio de un palabra 5
 
 export function averageWordLength(array) {
-    const newArray = array.map((element)=>{        return element.length
-   })
-      return sumArray(newArray)/newArray.length
+    if(array.length==0) {
+        return undefined
+    }
+     let averageWord = array.join('').length / array.length;
+     return averageWord;
  }
     
 
-/*Elimina los duplicados y devuelve el resultado como un nuevo array 6*/
+//Elimina los duplicados y devuelve el resultado como un nuevo array 6
 
-export function uniquifyArray
-
-/*Función doesWordExist*/
-
-export function doesWordExist(newArray){
-    let  newArray = "true" || "false";
-    for (let i=0; i < newArray.elements.length; i++) {
-        let element = newArray[i];
-        if(element = newArray[i])
-        return "true"
-    }  if (element != newArray[i])
-        return "false"
+export function uniquifyArray(array) {
+    if (array.length == 0){
+        return undefined;
+    }
+    return [...new Set(array)];
 }
 
+//Función doesWordExist 7
 
-export function howManyTimes(){}
+export function doesWordExist(array, word){
+    return array.includes(word);
+}
+
+//Función howManyTimes 8
+export function howManyTimes(array, sport){
+    let container = [];
+    for(let i=0; i<array.length; i++){
+        if(array[i].toLowerCase() === sport)
+        container.push(i);
+    } if (array.length ==0){
+        return undefined;
+    }
+    return container.length;
+    }
+
+
+  
 export function greatestProduct(){}
 
 
