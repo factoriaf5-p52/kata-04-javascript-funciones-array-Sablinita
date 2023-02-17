@@ -209,6 +209,7 @@ test('returns five when the word appears 5 times on the array', ()=> {
   });
 });
 
+
 describe('Counting Repetion - greatestProduct', ()=> {
 test('Defines greatestProduct #9', ()=> {
     expect(typeof greatestProduct).toBe('function');
